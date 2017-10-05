@@ -8,6 +8,6 @@ int main(void)
 	int y;
 	scanf("%o",&y);
 	printf("%o | %X = %o\n", y, x, y | x);
-    return 0;
+   	return 0;
 }
 
