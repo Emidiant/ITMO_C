@@ -2,20 +2,20 @@
 
 int main()
 {
-    int mas[7];
+    int a[7];
     int m;
-    //ввожу элементы массива
+    //enter the array
     //10, 20, 30, 40, 50, 60, 70
     for (m = 0; m<7; m++)
     {
         printf("a[%d] = ", m);
-        scanf("%d", &mas[m]);
+        scanf("%d", &a[m]);
     }
     for (m = 0; m<7; m++)
-        printf("%d ", mas[m]);
+        printf("%d ", a[m]);
     
     
-    //перемножение матриц
+    //second task
     int mat1[2][2]={{1, 1}, {1, 4}};
     int mat2[2][2]={{1, 2}, {4, 1}};
     int res[2][2]={{0, 0}, {0, 0}};
