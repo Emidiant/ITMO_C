@@ -20,23 +20,23 @@ int main()
     int mat2[2][2]={{1, 2}, {4, 1}};
     int res[2][2]={{0, 0}, {0, 0}};
     int i,j,k;
- 	int N=2;
+    int N=2;
 
 	for(i=0; i<N; i++)
 	{
-    	for(j=0; j<N; j++)
+    		for(j=0; j<N; j++)
    		{
-        for(k = 0; k<N; k++)
-           res[i][j]+=mat1[i][k]*mat2[k][j];
+        	for(k = 0; k<N; k++)
+        	res[i][j]+=mat1[i][k]*mat2[k][j];
   		}
 	}
 
  	printf("\n result \n");
  	for(i=0; i<N; i++)
  	{
- 	for(j=0; j<N; j++)
- 	{printf(" %d ",res[i][j]);}
-  	printf("\n");
+ 		for(j=0; j<N; j++)
+ 		{printf(" %d ",res[i][j]);}
+  		printf("\n");
  	}
 
 return 0;
