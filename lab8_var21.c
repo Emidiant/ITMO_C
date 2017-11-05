@@ -61,7 +61,7 @@ int main() {
     float h;
     printf("\nВведите строку: ");
     fgets(stri, len, stdin);
-    //    getchar();
+    //    getchar(); //не особо спасли ситуацию
     printf("Введите символ: ");
     //     getchar();
     fgets(stri1, len, stdin);
