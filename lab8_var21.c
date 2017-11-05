@@ -39,7 +39,7 @@ int main() {
     length = strlen(str)-1;
     printf("%0.f\n", length);
     
-    //task 4: comparison n
+    //task 4: comparison n Примечание: более короткий вариант возможен с использованием функции strncmp...
     int k,n,m=0;
     char string1[len];
     char string2[len];
