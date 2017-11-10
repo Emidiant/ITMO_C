@@ -55,15 +55,14 @@ int main() {
     if (m==0) {printf("Первые n символов равны\n");}
     else {printf("Первые n симвлов не равны\n");}
     
-    //task 8 ломается, если запустить с остальными запросами, но отдельно работает?!
+    //task 8 
     // вариант strcspn
     char stri[len], stri1[len];
     float h;
     printf("\nВведите строку: ");
+    getchar();
     fgets(stri, len, stdin);
-    //    getchar(); //не особо спасли ситуацию
-    printf("Введите символ: ");
-    //     getchar();
+    printf("Введите символ: ");  
     fgets(stri1, len, stdin);
     h=strcspn(stri, stri1);
     if (h+1!=strlen(stri)) {printf("%0.f\n",h+1);}
