@@ -1,4 +1,3 @@
-//
 //  func_lab11.c
 //  lab11_var21
 
