@@ -833,7 +833,6 @@ void bot_hit(int h, int v, int num){//в этой функции бот доби
                     coord_hit = next_coord_generate(h, v);
                     vert = coord_hit % 12;
                     hor = (coord_hit - vert)/12;
-                    printf("2: %d%d\n", hor, vert);
                     if(myField[hor][vert] == SHIP){
                         myField[hor][vert] = STRIKE;
                         printf("Бот попал\n");
@@ -848,7 +847,6 @@ void bot_hit(int h, int v, int num){//в этой функции бот доби
                     coord3 = third_coord_generate(h, v, hor, vert);
                     vert3 = coord3 % 12;
                     hor3 = (coord3 - vert3)/12;
-                    printf("3: %d%d\n", hor3, vert3);
                     if (myField[hor3][vert3] == SHIP)
                     {
                         myField[hor3][vert3] = STRIKE;
@@ -864,7 +862,6 @@ void bot_hit(int h, int v, int num){//в этой функции бот доби
                     coord4 = four_hit_coord(h, v, hor, vert, hor3, vert3);
                     vert4 = coord4 % 12;
                     hor4 = (coord4 - vert4)/12;
-                    printf("4: %d%d\n", hor4, vert4);
                     if (myField[hor4][vert4] == SHIP)
                     {
                         My_shot_draw(h, v);
