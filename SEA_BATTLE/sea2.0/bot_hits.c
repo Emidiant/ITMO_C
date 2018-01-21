@@ -11,7 +11,7 @@ int next_coord_generate(int h, int v)//генерация случайной к�
 {
     srand(time(NULL));
     int hit;
-    int coord = 0;
+    int coord;
     int flag_do = TRUE;
     while(flag_do){
         hit = up + rand() % left;
