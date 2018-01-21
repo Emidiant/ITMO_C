@@ -4,7 +4,7 @@ void my_hit()  // наши выстрелы
 {
     getchar();
     char vert;
-    int h, v=0;
+    int h, v;
     if (live_ships(BOT) == TRUE){//проверка на наличие кораблей у бота
         printf("Введите координату, по которой хотите выстрелить:\n");
         scanf("%c %d", &vert, &h);
